@@ -16,9 +16,9 @@ import sys
 def countingSort(arr):
     max_value = max(arr)
     if max_value % 2 == 0:
-        index_holder = [0]*(max(arr)+2)
+        index_holder = [0]*(max_value+2)
     else:
-        index_holder = [0]*(max(arr)+1)
+        index_holder = [0]*(max_value+1)
     for elem in arr:
         index_holder[elem] += 1
     return index_holder
